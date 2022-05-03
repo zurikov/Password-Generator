@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+	Password generator
+	Made by a.zurikov
+	29.04.2022 
+	-->
+	<title>Password generator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="mainDiv">
+		<div id="headerDiv">
+			<h1 id="header">Password generator</h1>
+			<a href="https://github.com/zurikov">
+				<button id="githubButton">
+					<img src="https://pngimg.com/uploads/github/github_PNG63.png" id="githubPNG">
+					My github
+				</button>
+			</a>
+		</div>
+		<div id="generatorDiv">
+			<form id="genForm">
+				<div id="passLengthDiv">
+					<h4>
+						Password length: 
+					</h4>
+					<input type="number" min="1" max="16" value="1" id="passLength">
+				</div>
+				<div>
+					<input type="button" value="Generate" onclick="genPass()">
+				</div>
+				<br>
+				<div id="passDiv">
+					<h4>
+						Your password: 
+					</h4>
+					<input type="text" placeholder="by @a.zurikov" readonly="" id="userPass">
+				</div>
+			</form>
+		</div>
+		<div style="padding-top: 1000px"></div>
+	</div>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
